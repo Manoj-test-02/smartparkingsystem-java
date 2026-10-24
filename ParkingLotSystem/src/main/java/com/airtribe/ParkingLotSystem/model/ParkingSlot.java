@@ -79,4 +79,7 @@ public class ParkingSlot {
     public void setParked(boolean parked) {
         this.parked = parked;
     }
+    public Long getFloorNumber() {
+        return parkingFloor.getFloorNumber();
+    }
 }

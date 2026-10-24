@@ -120,4 +120,12 @@ public class ParkingTicket {
     public void setParkingStatus(ParkingStatus parkingStatus) {
         this.parkingStatus = parkingStatus;
     }
+
+    public Long getParkingFloorNumber() {
+        return parkingSlot.getFloorNumber();
+    }
+
+    public String getSlotNumber() {
+        return parkingSlot.getSlotNumber();
+    }
 }

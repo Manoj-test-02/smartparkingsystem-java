@@ -36,7 +36,7 @@ public class ParkingTicketService {
         slot.setParked(false);
         parkingTicketRepository.save(parkingTicket);
         EntryTicketDTO entryTicket = new EntryTicketDTO(parkingTicket.getTicketId(), parkingTicket.getLicensePlate(),
-                parkingTicket.getEntryTime());
+                parkingTicket.getParkingFloorNumber(), parkingTicket.getSlotNumber(), parkingTicket.getEntryTime());
         return entryTicket;
     }
 
